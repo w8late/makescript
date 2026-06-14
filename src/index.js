@@ -11,9 +11,11 @@ if (process.argv.length < 3) {
 
 
 const filename = process.argv[2];
-import(`../${filename}`).then((mod) => {
-    console.log(mod.sources);
-});
+import(`../${filename}`).then(build);
+
+function build(buildScript) {
+    console.log(buildScript.sources);
+}
 
 
 
