@@ -4,5 +4,8 @@ export const sources = [
 ];
 
 export const binaryDirectory = "bin";
+export const binaryName = "test";
 
 export const programArguments = [""];
+
+export const compiler = "clang";
