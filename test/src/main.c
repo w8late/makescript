@@ -1,7 +1,11 @@
 #include <stdio.h>
+#include "test.h"
 
 int main(void) {
 
-    printf("hello world!");
+    struct TestStruct test;
+    TestStruct_create(&test);
+    printf("%d", test.value);
+    TestStruct_destroy(&test);
     return 0;
 }
